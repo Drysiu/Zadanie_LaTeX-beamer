@@ -1,0 +1,53 @@
+\documentclass[aspectratio=169]{beamer} % Format 16:9
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usetheme[lang=pl,hr=true]{NewPwr}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\graphicspath{ {./img/} }
+
+% DANE DO STRONY TYTUŁOWEJ
+\title{Ucieczka z miasta}
+\subtitle{Dlaczego na wsi żyje się lepiej niż w mieście?}
+\author{Piotr Dryś}
+\institute{Politechnika Wrocławska}
+\date{\today}
+
+\begin{document}
+% SLAJD 1
+{
+\begin{frame}
+    \titlepage
+\end{frame}
+}
+
+% SLAJD 2
+\begin{frame}{Zaliczenie zadania}
+    \textbf{Link do repozytorium ze źródłami prezentacji:}
+    
+    \vspace{1cm}
+    
+    \begin{center}
+        \url{https://github.com/Drysiu/Zadanie_LaTeX-beamer}
+    \end{center}
+    
+    \vspace{1cm}
+    \footnotesize
+    Repozytorium zawiera pliki źródłowe (.tex, .bib, obrazki) bez plików pomocniczych.
+\end{frame}
+
+% SLAJD 3
+\begin{frame}{Plan prezentacji}
+    \tableofcontents
+\end{frame}
+
+    \input{rozdzialy/wstep.tex}
+    \input{rozdzialy/rozdzial1.tex}
+    \input{rozdzialy/rozdzial2.tex}
+    \input{rozdzialy/rozdzial3.tex}
+    \input{rozdzialy/rozdzial4.tex}
+    \input{rozdzialy/pozegnanie.tex}
+    \input{rozdzialy/bibliografia.tex}
+    
+\end{document}
